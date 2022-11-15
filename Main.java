@@ -3,7 +3,7 @@ import java.util.*;
 public class Main {
     // The main method required to make the application run.
     public static void main(String[] args) {
-        // A boolean to make it so the application looks forever until finished. (Same use as a thread.)
+        // A boolean to make it so the application loops forever until finished. (Same use as a thread.)
         boolean complete = false;
         // Current stage of the application. Is changed multiple times in use so a very crucial variable.
         STAGE currentStage = STAGE.INPUT;
