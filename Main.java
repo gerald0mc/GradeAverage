@@ -29,7 +29,7 @@ public class Main {
                 }
                 // A blank integer variable that will contain the users input submitted grade. (Hopefully)
                 int grade;
-                // A try/catch because requires it.
+                // A try/catch because Java requires it.
                 try {
                     // Attempts to cast the grade variable to the second string the user inputted. (Should be a grade)
                     grade = Integer.parseInt(lineArray[1]);
