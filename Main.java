@@ -3,7 +3,7 @@ import java.util.*;
 public class Main {
     // The main method required to make the application run.
     public static void main(String[] args) {
-        // A boolean to make it so the application loops forever until finished. (Same use as a thread.)
+        // A boolean to make it so the application looks forever until finished. (Same use as a thread.)
         boolean complete = false;
         // Current stage of the application. Is changed multiple times in use so a very crucial variable.
         STAGE currentStage = STAGE.INPUT;
@@ -29,11 +29,11 @@ public class Main {
                 }
                 // A blank integer variable that will contain the users input submitted grade. (Hopefully)
                 int grade;
-                // A try/catch because Java requires it.
+                // A try/catch because requires it.
                 try {
                     // Attempts to cast the grade variable to the second string the user inputted. (Should be a grade)
                     grade = Integer.parseInt(lineArray[1]);
-                    // Will fire if the user inputted something that isn't a integer. (Word, Float, Double, Etc...)
+                // Will fire if the user inputted something that isn't a integer. (Word, Float, Double, Etc...)
                 } catch (Exception e) {
                     sysOut("You entered a incorrect integer value for your grade. Please only enter whole numbers for your grade. Thank you!");
                     // Make sure to include to continue in your while loop if you want it to act as a return. If you use return it breaks out of your program.
@@ -68,7 +68,7 @@ public class Main {
         }
         // A loop through the grade map that prints all the user submitted grades to the output log.
         for (Map.Entry<String, Integer> entry : gradeMap.entrySet()) {
-            sysOut(entry.getKey() + " " + entry.getValue());
+            sysOut(entry.getKey() + ": " + entry.getValue());
         }
         // Prints the final average score in the output log, which it gets from the static returnTotalOfMap method.
         sysOut("Average Score: " + returnTotalOfMap(gradeMap));
